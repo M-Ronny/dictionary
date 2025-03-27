@@ -15,8 +15,65 @@
     margin: 0 auto;
   }
   
+  section {
+    width: 75%;
+    height: 710px;
+    padding: 0 5%;
+    margin: 0 13%;
+  }
+
+  .getDefinition {
+    height: 400px;
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+    border: solid 5px rgb(31, 184, 245);
+  }
+
+  div h2, div h5, div p {
+    display: inline;
+    vertical-align: top;
+  }
   
   /******************************************
   /* ADDITIONAL STYLES
   /*******************************************/
-  
+  h1 {
+    text-align: center;
+    font-size: 5em;
+  }
+
+  input {
+    margin-left: 20%;
+    height: 50px;
+    font-size: 2em;
+  }
+
+  button {
+    height: 50px;
+    font-size: 2em;
+    border-radius: 10px;
+    background: rgb(31, 184, 245);
+    color: white;
+  }
+
+  button:hover {
+    background: white;
+    color: rgb(31, 184, 245);
+  }
+
+  div {
+    margin-top: 5%;
+  }
+
+  p, h2 {
+    font-size: 2em;
+  }
+
+  h4, h5, .synomyms{
+    font-size: 18px;
+  }
+
+  h1, h2, h4, h5 {
+    color: rgb(31, 184, 245);
+  }
