@@ -9,8 +9,14 @@ function getDefinition() {
       console.log(data)
       document.querySelector('.word').innerText = data[0].word
       document.querySelector('.partOfSpeech').innerText = data[0].meanings[0].partOfSpeech
-      document.querySelector('.definition').innerText = data[0].meanings[0].definitions[0].definition
       document.querySelector('.synomyms').innerText = data[0].meanings[0].synonyms.join(', ')
+      
+      data[0].meanings[0].definitions.forEach(obj => {
+        console.log(obj.definition)
+        const li = document.createElement('li')
+        li.textContent = obj.definition
+        document.querySelector('.definition').appendChild(li)
+      })
     })
     .catch(err => {
         console.log(`error ${err}`)
