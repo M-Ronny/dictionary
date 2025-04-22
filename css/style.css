@@ -43,8 +43,11 @@
     font-size: 5em;
   }
 
+  .input {
+    text-align: center;
+  }
+
   input {
-    margin-left: 20%;
     height: 50px;
     font-size: 2em;
   }
